@@ -32,7 +32,7 @@ public class DiscordMusicBot {
                     .setToken(botToken)
                     .buildAsync();
         } catch (Exception e) {
-            LOGGER.error(e.getMessage());
+            LOGGER.error(e.getMessage(), e);
             return;
         }
 
