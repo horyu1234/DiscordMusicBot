@@ -9,6 +9,10 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
+plugins {
+    id "org.sonarqube" version "2.6"
+}
+
 jar {
     manifest {
         attributes 'Title': 'DiscordMusicBot', 'Version': version, 'Main-Class': 'com.horyu1234.discordmusicbot.DiscordMusicBot'
