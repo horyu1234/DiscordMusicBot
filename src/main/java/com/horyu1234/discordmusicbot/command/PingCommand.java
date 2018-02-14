@@ -11,10 +11,10 @@ import net.dv8tion.jda.core.entities.Message;
  * Created by horyu on 2018-02-14
  */
 public class PingCommand implements CommandExecutor {
-    @Command(aliases = {"!ping", "!핑"})
+    @Command(aliases = {"h!ping", "h!핑"})
     public void onPingCommand(Message message, JDA jda) {
         EmbedBuilder embedBuilder = new EmbedBuilder()
-                .setDescription("퐁! `(통신 지연 시간: " + jda.getPing() + "ms)`")
+                .setDescription("퐁!")
                 .setColor(Colors.BLUE);
 
         message.getChannel().sendMessage(embedBuilder.build()).complete();

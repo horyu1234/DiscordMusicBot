@@ -36,7 +36,7 @@ public class DiscordMusicBot {
             return;
         }
 
-        jda.getPresence().setGame(Game.playing("!help"));
+        jda.getPresence().setGame(Game.playing("h!help"));
 
         LOGGER.info("명령어 핸들러를 초기화하는 중입니다...");
         CommandHandler commandHandler = new JDA3Handler(jda);
