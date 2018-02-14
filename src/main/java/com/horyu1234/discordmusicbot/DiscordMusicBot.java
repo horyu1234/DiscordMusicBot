@@ -17,6 +17,7 @@ public class DiscordMusicBot {
     private static final Logger LOGGER = LoggerFactory.getLogger(DiscordMusicBot.class);
 
     public static void main(String[] args) {
+
         if (args.length != 1) {
             LOGGER.error("봇의 토큰을 입력해주세요.");
             return;
