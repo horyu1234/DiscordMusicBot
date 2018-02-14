@@ -21,6 +21,7 @@ public class DiscordMusicBot {
             LOGGER.error("봇의 토큰을 입력해주세요.");
             return;
         }
+        System.out.println("sonarqube test");
 
         LOGGER.info("디스코드 봇을 시작하는 중입니다...");
         String botToken = args[0];
