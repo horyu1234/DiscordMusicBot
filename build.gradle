@@ -9,6 +9,19 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.2"
+    }
+}
+
+apply plugin: "org.sonarqube"
+
 jar {
     manifest {
         attributes 'Title': 'DiscordMusicBot', 'Version': version, 'Main-Class': 'com.horyu1234.discordmusicbot.DiscordMusicBot'
