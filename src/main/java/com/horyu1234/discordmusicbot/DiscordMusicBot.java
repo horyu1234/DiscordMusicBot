@@ -17,7 +17,6 @@ public class DiscordMusicBot {
     private static final Logger LOGGER = LoggerFactory.getLogger(DiscordMusicBot.class);
 
     public static void main(String[] args) {
-
         if (args.length != 1) {
             LOGGER.error("봇의 토큰을 입력해주세요.");
             return;
@@ -33,7 +32,7 @@ public class DiscordMusicBot {
                     .setToken(botToken)
                     .buildAsync();
         } catch (Exception e) {
-            LOGGER.error(e.getMessage());
+            LOGGER.error(e.getMessage(), e);
             return;
         }
 
