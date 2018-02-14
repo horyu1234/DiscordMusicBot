@@ -32,7 +32,7 @@ public class DiscordMusicBot {
                     .setToken(botToken)
                     .buildAsync();
         } catch (Exception e) {
-            LOGGER.error(e.getMessage());
+            LOGGER.error("JDA 를 초기화하는 중 오류가 발생하였습니다.", e);
             return;
         }
 
